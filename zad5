@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+$tablica = array();
+for($i = 0; $i < 50; $i++) {
+    $tablica[$i] = rand() % 100 + 1;
+}
+for($j = 0; $j < 50; $j++) {
+    echo $tablica[$j] . " ";
+}
+echo "\nLiczby całkowite które są kwadratem: ";
+for($k = 0; $k < 50; $k++) {
+    if(sqrt($tablica[$k]) == (int)sqrt($tablica[$k])) {
+        echo $tablica[$k] . " ";
+    }
+}
+?>
+
+
+</body>
+</html>
