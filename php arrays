@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylea.css">
     <title>Usuwanie parzystych elementów z tablicy</title>
 </head>
 <body>
@@ -22,12 +22,13 @@
             echo "<br><br>";
             echo "Tablica po usunięciu parzystych elementów:<br><br>";
 
-            $roj2_p = array();
+            $roj2_p = array(); 
             $roj2_n = array(); 
 
             foreach ($roj as $a) {
                 if ($a % 2 == 1) {
                     $roj2_n[] = $a; 
+                } else {
                     $roj2_p[] = $a; 
                 }
             }
